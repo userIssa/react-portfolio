@@ -1,0 +1,66 @@
+:root {
+  --primary: #1B1B1B;
+  --secondary: #C16060;
+  --tertiary: #151515;
+  --text-opacity: rgba(255, 255, 255, 0.8);
+  --text-opacity-2: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p, li {
+  color: var(--text-opacity);
+  line-height: 1.7;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  color: white;
+}
+
+.links {
+  font-size: 0.9rem;
+  /* color: var(--text-opacity); */
+}
+
+.container {
+  max-width: 90%;
+}
+
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1300px;
+  }
+}

@@ -1,0 +1,209 @@
+#projects-section {
+    background-color: var(--tertiary);
+}
+
+#projects-div {
+    margin: auto;
+}
+
+#projects-div h2 {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#project-list {
+    padding: 10rem 0;
+}
+
+.projects1, .projects2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.projects1 {
+    text-align: right;
+}
+
+.projects2 {
+    flex-direction: row-reverse;
+}
+
+#project2, #project3, #project4, #project5, #project6, #project7, #project8, #project9 {
+    margin-top: 15rem;
+}
+
+.border1 {
+    width: 600px;
+    height: 330px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+}
+
+.border2 {
+    width: 600px;
+    height: 330px;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+}
+
+.project-image {
+    align-self: center;
+    transition: all ease-in-out 0.25s;
+    cursor: pointer;
+}
+
+.image-links {
+    z-index: 1;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+.project-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-text-section h5 {
+    color: var(--secondary);
+}
+
+.project-text-section h3 {
+    margin-top: 0.5rem;
+}
+
+.project-description {
+    max-width: 40rem;
+    margin-top: 1rem;
+}
+
+.stack-div1, .stack-div2 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stack-div1 {
+    justify-content: flex-end;
+}
+
+.stack {
+    color: var(--text-opacity-2);
+}
+
+.source1, .source2 {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.source1 {
+    justify-content: flex-end;
+}
+
+.github1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.github2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.source1 .live, .source2 .live {
+    margin-left: 1.25rem;
+}
+
+.source1 .live a::before {
+    position: absolute;
+    transform: scale(1.5);
+    content: "\2022";
+    color: var(--secondary);
+    font-weight: bold;
+    display: inline-block;
+    margin-left: -0.75rem;
+}
+
+.source2 .live a::before {
+    position: absolute;
+    transform: scale(1.5);
+    content: "\2022";
+    color: var(--secondary);
+    font-weight: bold;
+    display: inline-block;
+    margin-left: -0.75rem;
+}
+
+#other-projects-div {
+    padding-bottom: 6rem;
+}
+
+#other-projects-div h2 {
+    padding-top: 0;
+}
+
+#other-projects-div #github {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+    .projects1, .projects2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .border1{
+        left: 50%;
+        transform: translate(-50%);
+        width: 650px;
+    }
+
+    .border2 {
+        right: 50%;
+        transform: translate(50%);
+        width: 650px;
+    }
+
+    .project-description {
+        max-width: max-content;
+    }
+
+    .stack-div1, .stack-div2, .source1, .source2 {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .project-image {
+        width: 95%;
+    }
+
+    .border1, .border2 {
+        width: 99%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .border1, .border2 {
+        height: 150px;
+    }
+}
