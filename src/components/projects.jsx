@@ -1,12 +1,12 @@
 import "../styles/Projects.css";
 
-import project1 from "../assets/proj1.png";
-import project2 from "../assets/proj2.png";
-import project3 from "../assets/proj3.png";
-import project4 from "../assets/proj4.png";
+//import project1 from "../assets/proj1.png";
+//import project2 from "../assets/proj2.png";
+//import project3 from "../assets/proj3.png";
+//import project4 from "../assets/proj4.png";
 //import project5 from "../assets/proj5.png";
 //import project6 from "../assets/proj6.png";
-import project7 from "../assets/proj7.png";
+//import project7 from "../assets/proj7.png";
 import project11 from "../assets/proj11.png"
 import project12 from "../assets/proj12.png"
 import project13 from "../assets/proj13.png"
@@ -128,7 +128,7 @@ export default function Projects() {
                     <div id="other-projects-div">
                         <h2>View my other projects</h2>
                         <div id="github">
-                            <img src={github} />
+                            <img src={github} alt="github"/>
                             <a style={{fontSize: "1.2rem", color: "var(--text-opacity)"}} href="https://github.com/userIssa">Github</a>
                         </div>
                     </div>
