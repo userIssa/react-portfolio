@@ -15,11 +15,11 @@ export default function Hero() {
                             <p id="intro-p" className="links">Hello, my name is</p>
                             <h1>Tolu Oderinde Issa.</h1>
                             <h2 id="h2" style={{color: "rgba(255, 255, 255, 0.8)"}}>A Software Engineer.</h2>
-                            <p id="interest-p">I am based in Nigeria. I have an interest in ethical hacking, app developement, product management, data analysis and everthing in between</p>
+                            <p id="interest-p">I am based in Nigeria. I have an interest in ethical hacking, app developement, product management, data analysis and everthing in between. toluwanimioderinde@gmail.com</p>
                         </div>
                         <div id="hero-cta-div">
-                            <button id="project-cta"><img id="arrow" src={arrow} /><a href="#projects-section">View Projects</a></button>
-                            <button id="talk-cta"><img src={message} id="message-icon" /><a href="#contact-section">Let's Talk</a></button>
+                            <button id="project-cta"><img id="arrow" alt="arrow" src={arrow} /><a href="#projects-section">View Projects</a></button>
+                            <button id="talk-cta"><img src={message} id="message-icon" alt="message"/><a href="#contact-section">Let's Talk</a></button>
                         </div>
                     </div>
                 </div>
