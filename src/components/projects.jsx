@@ -10,6 +10,7 @@ import "../styles/Projects.css";
 import project11 from "../assets/proj11.png"
 import project12 from "../assets/proj12.png"
 import project13 from "../assets/proj13.png"
+import project14 from "../assets/proj14.png"
 
 import github from "../assets/github.png";
 
@@ -32,7 +33,7 @@ const project = [
         description: "A repository of python scripts for ethical hacking.",
         stack: ["Pyton", "Kali Linux", "Bash"],
         github: "https://github.com/userIssa/hackerScript",
-        //site: "https://joshua-spotify-search.onrender.com"
+        //site: "https://SITE-GOES-HERE.com"
     },
     {
         index: 3,
@@ -40,21 +41,21 @@ const project = [
         image: project13,
         title: "Meme App",
         description: "A Meme app that uses an API to search the 100 most popular memes at the time and randomly displays any while also allowing you to edit the image by adding text.",
-        stack: ["React", "Typescript", "Node-JS"],
-        github: "https://github.com/userIssa/meme-app",
+        stack: ["React", "Node-JS"],
+        github: "https://github.com/userIssa/memeApp",
         site: "https://meme4u-issa.netlify.app"
     },
-    /*
     {
         index: 4,
         reverse: true,
-        image: project1,
-        title: "Space Tour",
-        description: "A Responsive React App built as an intermediate challenge from frontend mentor, a Space Application that gives information on various planets, pilots and technologies used to reach there. it fetches data from a json file and renders it on the page with the help of state from react.",
-        stack: ["React", "HTML&CSS"],
-        github: "https://github.com/JuszJo/space-tour",
-        site: "https://joshua-space-tour.netlify.app/"
+        image: project14,
+        title: "Leave Management System",
+        description: "A simple program for managing the leave application process in work spaces",
+        stack: ["PHP", "CSS"],
+        github: "https://github.com/userIssa/react-portfolio",
+        //site: "https://SITE-GOES-HERE.com"
     },
+    /*
     {
         index: 5,
         reverse: false,
@@ -92,7 +93,7 @@ function Template({ details }) {
     return (
         <div id={`project${details.index}`} className={details.reverse ? "projects2" : "projects1"}>
             <div className={details.reverse ? "border2" : "border1"}></div>
-            <a className="image-links" href={details.site} target="_blank" rel="norefferer">
+            <a className="image-links" href={details.site} target="_blank" rel="noopener noreferrer">
                 <img className="project-image" width={600} src={details.image} alt="projects done" />
             </a>
             <div className="project-text-section">
@@ -105,10 +106,10 @@ function Template({ details }) {
                 <div className={details.reverse ? "source2" : "source1"}>
                     <div className={details.reverse ? "github2" : "github1"}>
                         <img src={github} alt="github icon" />
-                        <a href={details.github} target="_blank" style={{fontSize: "1.2rem", color: "var(--text-opacity)"}}>Github</a>
+                        <a href={details.github} target="_blank" rel="noopener noreferrer" style={{fontSize: "1.2rem", color: "var(--text-opacity)"}}>Github</a>
                     </div>
                     <div className="live">
-                        <a href={details.site} target="_blank" style={{fontSize: "1.2rem", color: "var(--text-opacity)"}}>Live Site</a>
+                        <a href={details.site} target="_blank" rel="noopener noreferrer" style={{fontSize: "1.2rem", color: "var(--text-opacity)"}}>Live Site</a>
                     </div>
                 </div>
             </div>
